@@ -1,7 +1,11 @@
-# ProctorUDotNetAPIWrapper
+# ProctorU DotNet API Wrappers
 A .NET API Wrapper for ProctorU's API
 
-Create a Settings Object and Populate with ProctorU Settings
+ProctorUAPI_V1 is for the old version of the API
+ProctorUArchimedesAPIWrapper is for the version released 01/31/2016
+
+
+Create a Settings Object and Populate with ProctorU Settings.  The Settings object is located in the ROOT of the Wrapper.
 
         public Settings GetProctorUSettings()
         {
@@ -11,12 +15,12 @@ Create a Settings Object and Populate with ProctorU Settings
             return settings;
         }
 
-Create a DataObject from the /DO folder and Set Parameter:
+Create a DataObject from the /DO folder and Set Parameter to pass to the API:
 
     StudentProfileDO studentProfileDO = new StudentProfileDO();
     studentProfileDO.student_id = participant.Participant_Name;
 
 
-Call the ProctorU Wrapper Method and set the output equal to the ResponseDO object in the /DO folder
+Call the ProctorU Wrapper Method and set the output equal to the ResponseDO object from the /DO folder
 
     StudentProfileResponseDO studentProfile = puProfile.GetStudentProfile(config.GetProctorUSettings(), studentProfileDO);

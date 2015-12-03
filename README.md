@@ -1,9 +1,8 @@
 # ProctorU DotNet API Wrappers
-A .NET API Wrapper for ProctorU's API
+<b>.NET API Wrappers for ProctorU's API</b>
 
-ProctorUAPI_V1 is for the old version of the API
-
-ProctorUArchimedesAPIWrapper is for the version released 01/31/2016
+*  ProctorUAPI_V1 is for the old version of the API
+*  ProctorUArchimedesAPIWrapper is for the version released 01/31/2016
 
 
 Create a Settings Object and Populate with ProctorU Settings.  The Settings object is located in the ROOT of the Wrapper.
